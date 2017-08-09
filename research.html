@@ -7,152 +7,102 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
+  body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+  body, html {
     height: 100%;
     color: #777;
     line-height: 1.8;
-}
-    
-
-
-/* fixes initial animation run, without user input, on page load.
- */
-button:after {
-  visibility: hidden;
-}
-
-button:focus:after {
-  visibility: visible;
-}
-
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+  }
+  /* Create a Parallax Effect */
+  .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
+  }
+  /* First image (Logo. Full height) */
+  .bgimg-1 {
     background-image: url('/w3images/parallax1.jpg');
     min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
+  }
+  /* Second image (Portfolio) */
+  .bgimg-2 {
     background-image: url("/w3images/parallax2.jpg");
     min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
+  }
+  /* Third image (Contact) */
+  .bgimg-3 {
     background-image: url("/w3images/parallax3.jpg");
     min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+  }
+  .w3-wide {letter-spacing: 10px;}
+  .w3-hover-opacity {cursor: pointer;}
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
+      background-attachment: scroll;
     }
-}
+  }
 </style>
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button"> HOME </a>
-    <a href="#ourstory" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> OUR STORY </a>
-    <a href="#aboutus" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> ABOUT US </a>
-    <a href="#donate" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-handshake-o"></i> DONATE </a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button"> HOME </a>
+      <a href="#ourstory" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> OUR STORY </a>
+      <a href="#aboutus" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> ABOUT US </a>
+      <a href="#donate" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-handshake-o"></i> DONATE </a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
       <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
-       <a href="#ourstory" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR STORY</a>
+      <a href="#ourstory" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR STORY</a>
       <a href="#aboutus" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT US</a>
       <a href="#donate" class="w3-bar-item w3-button" onclick="toggleFunction()">DONATE</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
-    <br> </br>
- <div style="text-align:center;">
-   
-</div>
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-left-align"> Anxiety/Panic Disorder </h3>
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-        
-<p> An anxiety disorder is a common mental illness defined by feelings of uneasiness worry and fear.
-    It is often sudden and unexpected and can happen when the person is happy and healthy, or asleep.
-    It also usually happens away from home. </p>
-  <div class="w3-row">
-      <p class="w3-left-align"><em><a href="https://hannahmarrow.github.io/GWCFinalProject/anxiety.html">Click here to read more</a></em></p>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
     </div>
-        
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-right-align"> Obsessive-Compulsive Disorder (OCD) </h3>
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-        
-<p> A common disorder in which one has uncontrollable, recurring thoughts and behaviors that they feel the urge to repeat over and over. These symptoms can interfere with all aspects of life, including school, work, and personal relationships. </p>
-     These symptoms can interfere with all aspects of life, including school, work, and personal relationships.</p>
+  </div>
+
+  <!-- Container (Anxiety Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="anxiety>
+    <h3 \class="w3-xxlarge w3-text-light-grey w3-wide">Anxiety</h3>
+    <p>An anxiety disorder is a common mental illness defined by feelings of uneasiness worry and fear.
+      It is often sudden and unexpected and can happen when the person is happy and healthy, or asleep.
+      It also usually happens away from home. </p>
+      <div class="w3-row">
+        <p class="w3-left-align"><em><a href="https://hannahmarrow.github.io/GWCFinalProject/anxiety.html">Click here to read more</a></em></p>
+      </div>
+    </div>
+
+    <!-- Container (Obsessive-Compulsive Disorder (OCD) Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="anxiety>
+      <h3 \class="w3-xxlarge w3-text-light-grey w3-wide">Obsessive-Compulsive Disorder (OCD)</h3>
+      <p> A common disorder in which one has uncontrollable, recurring thoughts and behaviors that they feel the urge to repeat over and over. These symptoms can interfere with all aspects of life, including school, work, and personal relationships. 
+        These symptoms can interfere with all aspects of life, including school, work, and personal relationships.</p>
         <div class="w3-row">
-       <p class="w3-right-align"><em><a href="https://hannahmarrow.github.io/GWCFinalProject/ocd.html">Click here to read more</a></em></p>
-    </div>
-
-</div>
-
-      <!-- Second Parallax Image with Portfolio Text -->
-      <div class="bgimg-2 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-          <span class="w3-xxlarge w3-text-white w3-wide"></span>
+          <p class="w3-left-align"><em><a href="https://hannahmarrow.github.io/GWCFinalProject/anxiety.html">Click here to read more</a></em></p>
         </div>
       </div>
 
-      <!-- Third Parallax Image with Portfolio Text -->
-      <div class="bgimg-3 w3-display-container w3-opacity-min">
-        <div class="w3-display-middle">
-         <span class="w3-xxlarge w3-text-white w3-wide"></span>
-       </div>
-     </div>      
+      <!-- Footer -->
+      <footer class="w3-center w3-green w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
 
+          <i class="fa fa-users w3-hover-opacity"></i>
+        </div>
 
+      </footer>
 
-  </div>
-</div>
-     <!-- Footer -->
-     <footer class="w3-center w3-green w3-padding-64 w3-opacity w3-hover-opacity-off">
-      <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-      <div class="w3-xlarge w3-section">
-
-        <i class="fa fa-users w3-hover-opacity"></i>
-      </div>
-
-    </footer>
-
-  <script>
+      <script>
 // Modal Image Gallery
 function onClick(element) {
   document.getElementById("img01").src = element.src;
@@ -160,6 +110,7 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
@@ -170,6 +121,7 @@ function myFunction() {
     navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
   }
 }
+
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
   var x = document.getElementById("navDemo");
@@ -179,6 +131,7 @@ function toggleFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 <!--
