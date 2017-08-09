@@ -17,38 +17,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 <script>
 function bgChange(bg) {
     document.body.style.background = bg;
 }
 </script>
 </head>
-
 <body>
-
-
-
-
-<table style="width:300px;height:100px">
-  <tr>
-    <td onmouseover="bgChange(this.style.backgroundColor)" 
-        onmouseout="bgChange('transparent')"
-        style="background-color:Khaki">
-    </td>
-    <td onmouseover="bgChange(this.style.backgroundColor)" 
-        onmouseout="bgChange('transparent')"
-        style="background-color:PaleGreen">
-    </td>
-    <td onmouseover="bgChange(this.style.backgroundColor)" 
-        onmouseout="bgChange('transparent')"
-        style="background-color:Silver">
-    </td>
-  </tr>
-</table>
-
-</body>
-</html>
   
 /* Color changing end */
   button {
@@ -65,9 +40,7 @@ function bgChange(bg) {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-
   }
-
   button:after {
     content: '';
     display: block;
@@ -81,10 +54,8 @@ function bgChange(bg) {
     background: #3f51b5;
     border-radius: 100%;
     opacity: .6;
-
     transform: scale(0);
   }
-
   @keyframes ripple {
     0% {
       transform: scale(0);
@@ -97,21 +68,17 @@ function bgChange(bg) {
       transform: scale(2);
     }
   }
-
   button:not(:active):after {
     animation: ripple 1s ease-out;
   }
-
 /* fixes initial animation run, without user input, on page load.
 */
 button:after {
   visibility: hidden;
 }
-
 button:focus:after {
   visibility: visible;
 }
-
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -119,28 +86,23 @@ button:focus:after {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 /* First image (Logo. Full height) */
 .bgimg-1 {
   background-image: url('/w3images/parallax1.jpg');
   min-height: 100%;
 }
-
 /* Second image (Portfolio) */
 .bgimg-2 {
   background-image: url("/w3images/parallax2.jpg");
   min-height: 400px;
 }
-
 /* Third image (Contact) */
 .bgimg-3 {
   background-image: url("/w3images/parallax3.jpg");
   min-height: 400px;
 }
-
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
-
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
   .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -190,6 +152,10 @@ button:focus:after {
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-left-align"> Anxiety/Panic Disorder </h3>
     <div class="w3-col m6 w3-hide-small w3-padding-large">
+     
+      <div class="w3-row">
+        <p class="w3-left-align"><em>Click here for more</em></p>
+      </div>
     </div>
 
 <!--    
@@ -271,7 +237,6 @@ function myFunction() {
     navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
   }
 }
-
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction() {
   var x = document.getElementById("navDemo");
