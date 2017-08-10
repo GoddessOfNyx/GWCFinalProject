@@ -17,13 +17,11 @@
     body, h1, h2, h3, h4, h5, h6 {
         font-family: "Lato", sans-serif;
     }
-
     body, html {
         height: 100%;
         color: #777;
         line-height: 1.8;
     }
-
     button {
         position: relative;
         overflow: hidden;
@@ -38,9 +36,7 @@
         font-size: 16px;
         margin: 4px 2px;
         cursor: pointer;
-
     }
-
     button:after {
         content: '';
         display: block;
@@ -54,10 +50,8 @@
         background: #3f51b5;
         border-radius: 100%;
         opacity: .6;
-
         transform: scale(0);
     }
-
     @keyframes ripple {
         0% {
             transform: scale(0);
@@ -70,21 +64,17 @@
             transform: scale(2);
         }
     }
-
     button:not(:active):after {
         animation: ripple 1s ease-out;
     }
-
     /* fixes initial animation run, without user input, on page load.
     */
     button:after {
         visibility: hidden;
     }
-
     button:focus:after {
         visibility: visible;
     }
-
     /* Create a Parallax Effect */
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: fixed;
@@ -92,33 +82,27 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-
     /* First image (Logo. Full height) */
     .bgimg-1 {
         background-image: url('pupper.jpg');
         min-height: 100%;
     }
-
     /* Second image (Portfolio) */
     .bgimg-2 {
         background-color: # e0eee0;
         min-height: 400px;
     }
-
     /* Third image (Contact) */
     .bgimg-3 {
         background-image: url("/w3images/parallax3.jpg");
         min-height: 400px;
     }
-
     .w3-wide {
         letter-spacing: 10px;
     }
-
     .w3-hover-opacity {
         cursor: pointer;
     }
-
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 1024px) {
         .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -138,7 +122,7 @@
         <a href="#home" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-home"></i> HOME </a>
         <a href="#ourstory" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> OUR STORY </a>
         <a href="#aboutus" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> ABOUT US </a>
-        <a href="#donate" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-handshake-o"></i> DONATE </a>
+        <a href="#donate" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-handshake-o"></i> DONATE/RESOURCES </a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-green">
             <i class="fa fa-search"></i>
         </a>
@@ -149,7 +133,7 @@
         <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
         <a href="#ourstory" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR STORY</a>
         <a href="#aboutus" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT US</a>
-        <a href="#donate" class="w3-bar-item w3-button" onclick="toggleFunction()">DONATE</a>
+        <a href="#donate" class="w3-bar-item w3-button" onclick="toggleFunction()">DONATE/RESOURCES</a>
         <a href="#" class="w3-bar-item w3-button">SEARCH</a>
     </div>
 </div>
@@ -229,7 +213,6 @@
             navbar.className = navbar.className.replace(' w3-card-2 w3-animate-top w3-white', '');
         }
     }
-
     // Used to toggle the menu on small screens when clicking on the menu button
     function toggleFunction() {
         var x = document.getElementById('navDemo');
