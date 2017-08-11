@@ -16,6 +16,8 @@
 <style>
     body, h1, h2, h3, h4, h5, h6 {
         font-family: "Lato", sans-serif;
+        -webkit-column-span: 1; /* Chrome, Safari, Opera */
+    	column-span: 1;
     }
     body, html {
         height: 100%;
@@ -114,6 +116,15 @@
             background-attachment: scroll;
         }
     }
+    
+    .columns {
+    -webkit-column-count: 5; /* Chrome, Safari, Opera */
+    -moz-column-count: 5; /* Firefox */
+    column-count: 5;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
 </style>
 <body>
 
@@ -174,7 +185,15 @@
         <h3 class="w3-center">ABOUT US</h3>
         <p class="w3-center"><em>
             <br>
-            <img src="IMG_3373.JPG" alt="group_photo" style="width:530px;height:400px;"></em></p><br>
+            <img src="IMG_3373.JPG" alt="group_photo" style="width:530px;height:400px;"></em></p>
+            <br>
+        <p class="w3-center"><i> (From left to right:) </i></p>
+    <div class="columns">
+    <h3> Name </h3> <p> Bio bio bio bio bio bio </p>
+    <h3> Name </h3> <p> Bio bio bio bio bio bio </p>
+    <h3> Name </h3> <p> Bio bio bio bio bio bio </p>
+    <h3> Name </h3> <p> Bio bio bio bio bio bio </p>
+    <h3> Name </h3> <p> Bio bio bio bio bio bio </p>
     </div>
     
     <!-- Third Parallax Image with About Us Text -->
