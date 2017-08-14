@@ -24,7 +24,59 @@
         color: #777;
         line-height: 1.8;
     }
-    
+    button {
+        position: relative;
+        overflow: hidden;
+        padding: 16px 32px;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    button:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 120px;
+        height: 120px;
+        margin-left: -60px;
+        margin-top: -60px;
+        background: #3f51b5;
+        border-radius: 100%;
+        opacity: .6;
+        transform: scale(0);
+    }
+    @keyframes ripple {
+        0% {
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(2);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(2);
+        }
+    }
+    button:not(:active):after {
+        animation: ripple 1s ease-out;
+    }
+    /* fixes initial animation run, without user input, on page load.
+    */
+    button:after {
+        visibility: hidden;
+    }
+    button:focus:after {
+        visibility: visible;
+    }
     /* Create a Parallax Effect */
     .bgimg-1 {
         background-attachment: fixed;
@@ -66,7 +118,7 @@
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top" style="color=white;">
+<div class="w3-top" style="color:white;">
     <div class="w3-bar" id="myNavbar">
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
            onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -95,10 +147,10 @@
         <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">LIGHTHOUSE</span>
         <br> </br>
         <div style="text-align:center;">
-        <form>
-<input style="position: relative; overflow: hidden; padding: 16px 32px; background-color: rgb(0, 0, 0); border: none; color: white; padding: 15px 33px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;" type="button" value="Let's Get Started →" onclick="window.location.href='https://hannahmarrow.github.io/GWCFinalProject/research.html'" />
-</form>
-</div>
+            <button>
+                <a href="https://hannahmarrow.github.io/GWCFinalProject/research.html">Let's Get Started →</a>
+            </button>
+        </div>
     </div>
 </div>
 
