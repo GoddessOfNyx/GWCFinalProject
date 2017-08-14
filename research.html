@@ -15,6 +15,61 @@
     color: #777;
     line-height: 1.8;
   }
+ 
+ button {
+        position: relative;
+        overflow: hidden;
+        padding: 16px 32px;
+        background-color: rgb(0, 0, 0);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    button:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 120px;
+        height: 120px;
+        margin-left: -60px;
+        margin-top: -60px;
+        background: #3f51b5;
+        border-radius: 100%;
+        opacity: .6;
+        transform: scale(0);
+    }
+    @keyframes ripple {
+        0% {
+            transform: scale(0);
+        }
+        50% {
+            transform: scale(2);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(2);
+        }
+    }
+    button:not(:active):after {
+        animation: ripple 1s ease-out;
+    }
+    /* fixes initial animation run, without user input, on page load.
+    */
+    button:after {
+        visibility: hidden;
+    }
+    button:focus:after {
+        visibility: visible;
+    }
+ 
 /* DO NOT WORRY ABOUT THIS */ 
   .bgimg-1, .bgimg-2, .bgimg-3 {
     background-attachment: fixed;
@@ -86,7 +141,9 @@
       It is often sudden and unexpected and can happen when the person is happy and healthy, or asleep.
       It also usually happens away from home.</p>
   <br>
-  <p><a href="https://hannahmarrow.github.io/GWCFinalProject/anxiety.html">Click here to read more</a></p>
+  <button>
+                <a href="https://hannahmarrow.github.io/GWCFinalProject/anxiety.html">Learn More →</a>
+            </button>
   </div>
   
   <!-- LOOK HERE -->
