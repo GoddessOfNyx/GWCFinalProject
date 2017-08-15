@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!-- CSS -->
  <style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/others/oth-4/oth389.cur), progress !important;}</style><a href="http://www.cursors-4u.com/cursor/2009/04/29/liver-cancer-emerald-green-ribbon.html" target="_blank" title="Liver Cancer Emerald Green Ribbon"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Liver Cancer Emerald Green Ribbon" style="position:absolute; top: 0px; right: 0px;" /></a>
-<!-- DO NOT WORRY ABOUT THIS -->
 <title>Learn More</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,31 +16,26 @@
     line-height: 1.8;
   }
  
-/* DO NOT WORRY ABOUT THIS */ 
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+/* Creat a Parallax Effect */ 
+  .bgimg-1 {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-/* DO NOT WORRY ABOUT THIS */
+/* First Image ("Lighthouse" Full Height */
   .bgimg-1 {
     background-image: url('http://greensportsalliance.org/images/darkGreenSquare.gif');
     min-height: 50%;
   }
-/* DO NOT WORRY ABOUT THIS */
-  .bgimg-2 {
-    background-image: url("/w3images/parallax2.jpg");
-    min-height: 400px;
-  }
-/* DO NOT WORRY ABOUT THIS */
-  .bgimg-3 {
-    background-image: url("/w3images/parallax3.jpg");
-    min-height: 400px;
-  }
-  .w3-wide {letter-spacing: 10px;}
-  .w3-hover-opacity {cursor: pointer;}
-/* DO NOT WORRY ABOUT THIS */
+  .w3-wide {
+   letter-spacing: 10px;
+ }
+  .w3-hover-opacity {
+   cursor: pointer;
+ }
+ 
+/* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 1024px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: scroll;
@@ -49,7 +44,7 @@
 </style>
 <body>
 
-<!-- DO NOT WORRY ABOUT THIS -->
+<!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar" id="myNavbar">
       <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
@@ -62,7 +57,7 @@
       <a href="https://hannahmarrow.github.io/GWCFinalProject/home.html#resources" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-phone"></i> RESOURCES </a>
     </div>
 
-<!-- DO NOT WORRY ABOUT THIS -->
+<!-- Navbar on small screens -->
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
       <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
       <a href="#ourstory" class="w3-bar-item w3-button" onclick="toggleFunction()">OUR STORY</a>
@@ -72,34 +67,34 @@
     </div>
   </div>
 
-<!-- DO NOT WORRY ABOUT THIS -->
+<!-- First Parallax Image with "Learn More" Text -->
   <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
       <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">LEARN MORE</span>
     </div>
   </div>
       
-  <!-- LOOK HERE -->
-  <!--Anxiety-->
+  <!-- Container (Anxiety Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h2 class="w3-center">ANXIETY</h2>
   <h4>An anxiety disorder is a common mental illness defined by feelings of uneasiness worry and fear.
       It is often sudden and unexpected and can happen when the person is happy and healthy, or asleep.
       It also usually happens away from home.</h4>
   <br>
+ <!-- "Learn More" Button -->
  <div style="text-align:center;">
         <form>
 <input style="position: relative; overflow: hidden; padding: 16px 32px; background-color: rgb(110, 110, 110); border: none; color: white; padding: 15px 33px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;" type="button" value="Learn More" onclick= "window.location.href='https://hannahmarrow.github.io/GWCFinalProject/anxiety.html'" />
 </form>
 </div>
   </div>
-  
-  <!-- LOOK HERE -->
-   <!--OCD-->
+ 
+   <!-- Container (OCD Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h2 class="w3-center">OBSESSIVE-COMPULSIVE DISORDER (OCD)</h2>
   <h4>A common disorder in which one has uncontrollable, recurring thoughts and behaviors that they feel the urge to repeat over and over. These symptoms can interfere with all aspects of life, including school, work, and personal relationships.</h4>
   <br>
+ <!-- "Learn More" Button -->
  <div style="text-align:center;">
         <form>
 <input style="position: relative; overflow: hidden; padding: 16px 32px; background-color: rgb(110, 110, 110); border: none; color: white; padding: 15px 33px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;" type="button" value="Learn More" onclick= "window.location.href='https://hannahmarrow.github.io/GWCFinalProject/ocd.html'" />
@@ -107,12 +102,12 @@
 </div>
   </div>
   
-  <!-- LOOK HERE -->
-  <!--Bipolar-->
+  <!-- Container (Bipolar Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h2 class="w3-center">BIPOLAR DISORDER</h2>
   <h4>A common disorder with biological roots in the brain. Bipolar disorder can cause extreme mood swings. Manic(feeling very happy) and depressive(feeling very sad), episodes are the most commonly faced.</h4>
   <br>
+ <!-- "Learn More" Button -->
  <div style="text-align:center;">
         <form>
 <input style="position: relative; overflow: hidden; padding: 16px 32px; background-color: rgb(110, 110, 110); border: none; color: white; padding: 15px 33px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;" type="button" value="Learn More" onclick= "window.location.href='https://hannahmarrow.github.io/GWCFinalProject/bipolar.html'" />
@@ -120,12 +115,12 @@
 </div>
   </div>
   
-  <!-- LOOK HERE --> 
-  <!--Schizophrenia-->
+  <!-- Container (Schizophrenia Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h2 class="w3-center">SCHIZOPHRENIA</h2>
   <h4>A long-term mental disorder of a type involving a breakdown in the relation between thought, emotion, and behavior, leading to faulty perception, inappropriate actions and feelings, withdrawal from reality and personal relationships into fantasy and delusion, and a sense of mental fragmentation.</h4>
   <br>
+ <!-- "Learn More" Button -->
 <div style="text-align:center;">
         <form>
 <input style="position: relative; overflow: hidden; padding: 16px 32px; background-color: rgb(110, 110, 110); border: none; color: white; padding: 15px 33px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;" type="button" value="Learn More" onclick= "window.location.href='https://hannahmarrow.github.io/GWCFinalProject/schizophrenia.html'" />
@@ -133,12 +128,12 @@
 </div>
   </div>
     
-  <!-- LOOK HERE --> 
-  <!--Depression-->
+  <!-- Container (Depression Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h2 class="w3-center">DEPRESSION</h2>
   <h4>Depression is one of the most common mental disorder/illnesses in the average American population. Symptoms cause changes in how an individual feels, thinks, acts, goes through day to day activities, interacts, sleeps and eats.</h4>
   <br>
+ <!-- "Learn More" Button -->
    <div style="text-align:center;">
         <form>
 <input style="position: relative; overflow: hidden; padding: 16px 32px; background-color: rgb(110, 110, 110); border: none; color: white; padding: 15px 33px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;" type="button" value="Learn More" onclick= "window.location.href='https://hannahmarrow.github.io/GWCFinalProject/depression.html'" />
@@ -147,11 +142,12 @@
   </div>
   
    
-    <!--Eating Disorders-->
+    <!-- Container (Eating Disorders Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h2 class="w3-center">EATING DISORDERS</h2>
   <h4> Eating Disorders are serious conditions related to persistent eating behaviors that negatively impact your health, your emotions and your ability to function in important areas of life. The most common eating disorders are anorexia nervosa, bulimia nervosa and binge-eating disorder.</h4>
   <br>
+ <!-- "Learn More" Button -->
 <div style="text-align:center;">
         <form>
 <input style="position: relative; overflow: hidden; padding: 16px 32px; background-color: rgb(110, 110, 110); border: none; color: white; padding: 15px 33px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;" type="button" value="Learn More" onclick= "window.location.href='https://hannahmarrow.github.io/GWCFinalProject/eatingdisorders.html'" />
@@ -159,7 +155,7 @@
 </div>
   </div>
    
-<!-- DO NOT WORRY ABOUT THIS -->
+<!-- Footer -->
      <footer class="w3-center w3-green w3-padding-64 w3-opacity w3-hover-opacity-off">
       <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
       <div class="w3-xlarge w3-section">
@@ -170,14 +166,8 @@
     </footer>
 
   <script>
-    /* DO NOT WORRY ABOUT THIS */
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-/* DO NOT WORRY ABOUT THIS */
+
+/* Change style of navbar on scroll */
 window.onscroll = function() {myFunction()};
 function myFunction() {
   var navbar = document.getElementById("myNavbar");
@@ -187,7 +177,7 @@ function myFunction() {
     navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
   }
 }
-/* DO NOT WORRY ABOUT THIS */
+/* Used to toggle the menu on small screens when clicking on the menu button */
 function toggleFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
@@ -196,9 +186,9 @@ function toggleFunction() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
-    /* DO NOT WORRY ABOUT THIS */
+
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
